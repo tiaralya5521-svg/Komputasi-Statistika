@@ -3,7 +3,6 @@
 # ==========================================
 vektor_numerik <- c(1.5, 2.7, 3.14, 8.0)
 print(vektor_numerik)
-class(vektor_numerik) # Mengecek tipe data
 
 # ==========================================
 # 2. Vektor Integer (Integer Vector)
@@ -11,14 +10,12 @@ class(vektor_numerik) # Mengecek tipe data
 # Gunakan akhiran 'L' untuk memastikan nilainya berupa integer
 vektor_integer <- c(1L, 5L, 10L, 20L)
 print(vektor_integer)
-class(vektor_integer)
 
 # ==========================================
 # 3. Vektor Logical (Logical Vector)
 # ==========================================
 vektor_logical <- c(TRUE, FALSE, TRUE, TRUE)
 print(vektor_logical)
-class(vektor_logical)
 
 # ==========================================
 # 4. Matrix
