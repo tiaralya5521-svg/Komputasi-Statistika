@@ -11,11 +11,12 @@ sapply(iris, class)
 # 3. Buat variabel baru bernama 'turunan' dari Sepal.Width 
 # (Nilai "Besar" jika Sepal.Width > 3, selain itu "Kecil")
 iris$turunan <- ifelse(iris$Sepal.Width > 3, "Besar", "Kecil")
+head(iris)
 
 
 # 4. Ubah nama variabel 'turunan' menjadi 'sepal'
 colnames(iris)[colnames(iris) == "turunan"] <- "sepal"
-
+head(iris)
 
 # 5. Ambil data dengan sepal bernilai "Besar" dari species "virginica"
 data_virginica_besar <- iris[iris$sepal == "Besar" & iris$Species == "virginica", ]
@@ -37,5 +38,7 @@ df_setosa_sorted <- df_setosa[order(df_setosa$Sepal.Width), ]
 df_versicolor_sorted <- df_versicolor[order(df_versicolor$Sepal.Width), ]
 df_virginica_sorted <- df_virginica[order(df_virginica$Sepal.Width), ]
 
-# Menampilkan hasil pengurutan (contoh untuk setosa)
+# Menampilkan hasil pengurutan
 head(df_setosa_sorted)
+head(df_versicolor_sorted)
+head(df_virginica_sorted)
